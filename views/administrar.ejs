@@ -1,0 +1,16 @@
+<h1 class="ycotitle m-4">YCO Digital</h1>
+
+<p class="ycotitle lead title">Administrar</p>
+
+<div class="container border">
+<% users.forEach(function (user) { %>
+    <li class="text-center">  
+        <h3 class="text-white"><%= 'ID: ' + user.id %></h1>
+            <h3 class="text-white"><%= 'Nombre: ' +user.name %></h1>
+                <h3 class="text-white"><%= 'Socio N`: ' +user.number %></h1>
+        <hr color="white">  
+    </li>                                   
+<% }) %>
+</div>
+
+<a href="/" class="mt-5 btn btn-secondary">Volver</a>

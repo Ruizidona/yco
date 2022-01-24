@@ -1,0 +1,40 @@
+<div class="logo">
+    <img src="/img/logo.png"  alt="Yacht Club Olivos"> 
+</div>
+
+<h1 class="ycotitle mt-4">YCO Digital</h1>
+<p class="ycotitle lead mb-3">Bienvenido <%= user.name %></p>
+
+
+
+<div id="message" align="center">Bienvenidos a <strong>Yacht Club Olivos</strong> </div>
+
+
+<div id="page-wrap" align="center">
+
+		<div id="all">
+
+				<ul>
+                    <% if(true){ %>
+                        <li><a href="administrar"><i class="far fa-id-card"></i> Administrar </a></li>
+                        <% } %>  
+					<li><a href="credencial"><i class="far fa-id-card"></i> mi credencial </a></li>
+					<li><a href="views/MIS TRÁMITES.html"><i class="far fa-copy"></i> mis trámites </a></li>
+					<li><a href="mapa"><i class="fas fa-ship"></i> mis navegaciones</a></li>
+					<li><a href="views/FINANZAS DEL CLUB.html"><i class="fas fa-receipt"></i> finanzas del club </a></li>
+					<li><a href="views/FECHAS GRATAS.html"><i class="far fa-calendar-alt"></i> fechas gratas </a></li>
+					<li><a href="chat"><i class="fas fa-bullhorn"></i> eventos y comunicaciones </a></li>
+					<li><a href="views/COMUNIDAD YCO.html"><i class="fas fa-users"></i> Comunidad Yco </a></li>
+                    <li><a href="/users/logout"><i class="fas fa-sign-out-alt"></i> Cerrar sesión </a></li>
+				</ul>
+
+                
+		</div>
+
+</div>
+
+
+
+<div id="foot" align="center" class="m-4">
+		<a href="#" target="_blank" id="foot">Diseñado por<strong> Sistemas Américo &copy;</strong></a>
+</div>
