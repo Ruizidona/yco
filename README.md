@@ -1,23 +1,19 @@
-# Node.js & Passport Login
+# Node.js & Passport Login - etc
 
-This is a user login and registration app using Node.js, Express, Passport, Mongoose, EJS and some other packages.
+### Version: 1.0.0
 
-### Version: 2.0.0
+### Como se usa
 
-### Usage
+Tenes que abrir la terminal de comandos una vez bajado y darle a:
 
 ```sh
 $ npm install
 ```
+Y después para prenderlo:
 
 ```sh
-$ npm start
-# Or run with Nodemon
 $ npm run dev
 
 # Visit http://localhost:5000
 ```
 
-### MongoDB
-
-Open "config/keys.js" and add your MongoDB URI, local or Atlas
