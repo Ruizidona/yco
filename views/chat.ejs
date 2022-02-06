@@ -1,14 +1,71 @@
+<style> 
+        form { }
+        ul {list-style: none; margin: 0; padding: 0;}
+        ul > li {padding: 0.5rem 1rem; background: #ecf3e6;}
+        ul > li:nth-child(odd){
+            color: black;}
+        ul > li:last-child{
+        color: blue;}
+        ul>li:first-child {
+        color: black;}
+          
+
+</style>
 <h1 class="ycotitle m-4">YCO Digital</h1>
 
 <p class="ycotitle lead title">Comunicaciones</p>
 
-<form class="mt-5" >
-    <div class="container">
-        <label class="ycotitle" for="user">Usuario:</label>
-        <input type="text" id="user" disabled value='<%= user.name %>' class="ycotitle"><BR>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje..."></textarea><br>
-        <button type="submit" class="btn btn-info">Enviar</button>
+
+
+<div class="container border">
+   
+   <p class="text-white"><b>Usuario | </b> <i class="btn-info" id="user"> <%= user.name %></i></p>
     </div>
+    <ul class="list-group">
+    
+    </ul>
+<form>
+   
+        <input type="text" name="message" id="message" placeholder="Mensaje..." class="text-info form-control"><br>
+        <button type="submit" class="btn btn-info">Enviar</button>
+   
 </form>
 
+    <div class="users">
+
+    </div>
+  
+
+
 <a href="/" class="mt-5 btn btn-secondary">Volver</a>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    let socket = io()
+    //referencias al DOM
+    const form = document.querySelector('form')
+    const input = document.querySelector('input')
+    let mensajes = document.querySelector('ul')
+    let user = document.getElementById('user').innerText
+
+    
+    console.log(user)
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        if( input.value ){
+            
+            socket.emit('chat', `${user}:  ${input.value}`)
+            input.value = " ";
+        }
+    })
+
+    socket.on('chat', (msg)=>{
+       let item = document.createElement('li')
+       item.textContent = msg
+       mensajes.appendChild(item)
+       window.scrollTo(0, document.body.scrollHeight)
+      
+    })
+
+
+</script>

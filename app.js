@@ -4,18 +4,35 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
+const methodOverride = require('method-override');
 
 const app = express();
+const http = require('http');
+const server = http.createServer(app);
+const { Server } = require('socket.io')
+const io = new Server(server);
 
+io.on('connection', (socket) => {
+  console.log('Un usuario se ha conectado');
+  
+  
+  socket.on('chat', (msg)=> {
+    io.emit('chat', msg)
+  });
+
+})
+
+ 
 
 //definir carpeta pùblica
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 // Passport Config
 require('./config/passport')(passport);
 
 // DB Config
 const db = require('./config/keys').mongoURI;
+const { userInfo } = require('os');
 
 // Connect to MongoDB
 mongoose
@@ -46,6 +63,11 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+
+//middleware
+app.use(methodOverride('_method'));
+
+
 // Connect flash
 app.use(flash());
 
@@ -63,4 +85,4 @@ app.use('/users', require('./routes/users.js'));
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, console.log(`Server running on  ${PORT}`));
+server.listen(PORT, console.log(`Server running on  ${PORT}`));

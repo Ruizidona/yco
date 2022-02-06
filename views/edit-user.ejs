@@ -1,0 +1,27 @@
+<h1 class="ycotitle m-4">YCO Digital</h1>
+<link rel="stylesheet"href="../../css/style.css">
+
+<p class="ycotitle lead title">Administrar</p>
+
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>Editar usuario</h3>
+            <div class="card-body">
+                <form action="/edit-user/<%= datos.id %>?_method=PUT" method="POST">
+                    <input type="hidden" name="_method" value="PUT">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="name" value="<%= datos.name %>"><br>
+                        
+                        <input type="text" class="form-control" name="rol" placeholder="rol" value="<%= datos.rol %>"><br>
+                        
+                        <input type="text" class="form-control" name="number" placeholder="number" value="<%= datos.number %>"><br>
+                    </div>
+                    <button class="btn btn-info btn-block" type="submit">Editar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="/" class="mt-5 btn btn-secondary">Volver</a>
