@@ -105,10 +105,7 @@ router.post('/send-email', async (req, res) => {
         </ul>
         <p>${message}</p>
     `;
-const CLIENT_ID="140358544131-14q10fe6ip2cfo628qgput8oqk0m2ke3.apps.googleusercontent.com";
-const CLIENT_SECRET="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";
-const REDIRECT_URI="https://developers.google.com/oauthplayground";
-const REFRESH_TOKEN="1//041MH8gt4ukoVCgYIARAAGAQSNwF-L9Ir6NnusbCf95Lo2JwcIvIfGrw4DMCulB8ppWKquguTUEBwR0jXWRxHzHV3M8-PNAxCXlM";
+
 
 const oAuth2Client = new google.auth.OAuth2(
   CLIENT_ID,
