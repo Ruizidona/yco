@@ -1,38 +1,427 @@
 
+<!--<div id="message" align="center">Bienvenidos a <strong>SLAGF</strong> </div>
 
-<h1 class="ycotitle mt-4">YCO Digital</h1>
-<p class="ycotitle lead mb-3">Bienvenido <%= user.name %></p>
-
-
-
-<div id="message" align="center">Bienvenidos a <strong>Yacht Club Olivos</strong> </div>
+-->
 
 
-<div id="page-wrap" align="center">
 
-		<div id="all">
 
-				<ul>
-                    <% if( user.rol === 'admin'){ %>
-                        <li><a href="administrar"><i class="far fa-id-card"></i> Administrar </a></li>
-                        <% } %>  
-					<li><a href="credencial"><i class="far fa-id-card"></i> mi credencial </a></li>
-					<li><a href="views/MIS TRÁMITES.html"><i class="far fa-copy"></i> mis trámites </a></li>
-					<li><a href="mapa"><i class="fas fa-ship"></i> mis navegaciones</a></li>
-					<li><a href="views/FINANZAS DEL CLUB.html"><i class="fas fa-receipt"></i> finanzas del club </a></li>
-					<li><a href="views/FECHAS GRATAS.html"><i class="far fa-calendar-alt"></i> fechas gratas </a></li>
-					<li><a href="chat"><i class="fas fa-bullhorn"></i> eventos y comunicaciones </a></li>
-					<li><a href="views/COMUNIDAD YCO.html"><i class="fas fa-users"></i> Comunidad Yco </a></li>
-                    <li><a href="/users/logout"><i class="fas fa-sign-out-alt"></i> Cerrar sesión </a></li>
-				</ul>
+<!-- ======= Hero Section ======= -->
+<div class="hero-main">
+    <div class="hero-overlay"></div>
+    <h1 class="text-uppercase">Sociedad Latinoamericana de Genética Forense</h1>
+    <p class="text-center m-5 text-uppercase">Excelencia académica y formación científica</p>
 
-                
+  </div>
+
+
+   <!-- ======= Cta Section ======= 
+   <section id="cta" class="cta">
+    <div class="container" data-aos="zoom-in">
+
+      <div class="text-center">
+        <h3>Inscribete a nuestros cursos</h3>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a class="cta-btn" href="#">Ver Cursos</a>
+      </div>
+
+    </div>
+  </section><!-- End Cta Section -->
+
+
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+	<div class="container">
+
+	  <div class="row">
+
+		<div class="col-lg-3 col-md-6">
+		  <div class="count-box">
+			<i class="fas fa-user-md"></i>
+			<span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+			<p>Doctores</p>
+		  </div>
 		</div>
 
-</div>
+		<div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+		  <div class="count-box">
+			<i class="far fa-hospital"></i>
+			<span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+			<p>Departmentos</p>
+		  </div>
+		</div>
+
+		<div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+		  <div class="count-box">
+			<i class="fas fa-flask"></i>
+			<span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+			<p>Research Labs</p>
+		  </div>
+		</div>
+
+		<div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+		  <div class="count-box">
+			<i class="fas fa-award"></i>
+			<span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+			<p>Awards</p>
+		  </div>
+		</div>
+
+	  </div>
+
+	</div>
+  </section><!-- End Counts Section -->
+
+<hr>
+
+<!-- ======= Doctors Section ======= -->
+<section id="doctors" class="doctors mb-5">
+	<div class="container">
+
+	  <div class="section-title">
+		<h2>Doctores</h2>
+		<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+	  </div>
+
+	  <div class="row">
+
+		<div class="col-lg-6">
+		  <div class="member d-flex align-items-start">
+			<div class="pic"><img src="img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+			<div class="member-info">
+			  <h4>Tavares, José Caetano</h4>
+			  <span>Brasil</span>
+			  <p>CEBRAPEC (Centro Brasileiro de Pesquisa Científica)</p>
+			  <div class="social">
+				<a href=""><i class="fab fa-linkedin"></i></a>
+				<a href=""><i class="fas fa-user"></i></a>
+				
+				
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-lg-6 mt-4 mt-lg-0">
+		  <div class="member d-flex align-items-start">
+			<div class="pic"><img src="img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+			<div class="member-info">
+			  <h4>Gotti, Adriana Silvia</h4>
+			  <span>Argentina</span>
+			  <p>Centro de Estudios Biomoleculares y Genética Forense (CEByGF)  </p>
+			  <div class="social">
+				<a href=""><i class="fab fa-linkedin"></i></a>
+				<a href=""><i class="fas fa-user"></i></a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-lg-6 mt-4">
+		  <div class="member d-flex align-items-start">
+			<div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			<div class="member-info">
+			  <h4>Zurita Añez, Humberto</h4>
+			  <span>Bolivia</span>
+			  <p>Clinica SIRANI</p>
+			  <div class="social">
+				<a href=""><i class="fab fa-linkedin"></i></a>
+				<a href=""><i class="fas fa-user"></i></a>
+				
+				
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Urrutia Salinas, Oriana</h4>
+				<span>CHILE</span>
+				<p>Académico Diagnóstico Molecular, Facultad de Ciencias Químicas y Farmacéuticas, Universidad de Chile.</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Alape Ariza, Joseph </h4>
+				<span>COLOMBIA</span>
+				<p>Grupo de Genética Forense, Regional Noroccidente. Instituto Nacional de Medicina Legal y Ciencias Forenses, Medellín, Antioquia.</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Fallas González, Silvia</h4>
+				<span>COSTA RICA</span>
+				<p>Laboratorio de Pruebas de Paternidad de la Caja Costarricense del Seguro Social.</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Amaro Suárez, Fermín Fernando</h4>
+				<span>CUBA</span>
+				<p> Laboratorio de Biología Molecular del Instituto de Medicina Legal de Cuba.</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Lara Galarza, María Elisa </h4>
+				<span>ECUADOR</span>
+				<p>Perito en Genética Forense</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
 
 
 
-<div id="foot" align="center" class="m-4">
-		<a href="#" target="_blank" id="foot">Diseñado por<strong> Sistemas Américo &copy;</strong></a>
-</div>
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Héctor Rolando Contreras MsC.</h4>
+				<span>GUATEMALA</span>
+				<p>Asociación Nacional de Criminologos, Criminalistas e Investigadores Criminales de Guatemala (ANCRIG)</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Monterrosa, Juan Carlos</h4>
+				<span>EL SALVADOR</span>
+				<p>Laboratorio de Genética Forense, Instituto de Medicina Legal de El Salvador, Corte Suprema de Justicia.</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Matamoros Zelaya, Mireya</h4>
+				<span>HONDURAS</span>
+				<p>Dirección de Medicina Forense, Bo. Guacerique, Comayaguela.</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Rangel Villalobos, Héctor</h4>
+				<span>MÉXICO</span>
+				<p>Instituto de Investigación en Genética Molecular (UdeG).</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Huete-Pérez, Jorge A. </h4>
+				<span>NICARAGUA</span>
+				<p>Centro de Biología Molecular, Universidad Centroamericana.</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Castillo Mewa, Juan Alberto</h4>
+				<span>PANAMÁ</span>
+				<p>Genomic and Proteomic Dept. Gorgas Memorial Institute for Health Studies, Panamá.</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Pagano, Sinthia</h4>
+				<span>Uruguay</span>
+				<p>CODIS, Uruguay.</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Iannacone De La Flor, Gian Carlo</h4>
+				<span>PERÚ</span>
+				<p>Investigador Nacional Perú – CONCYTEC.</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Fernández, Virgilio - Cátedra de Genética Médica</h4>
+				<span>REPÚBLICA DOMINICANA</span>
+				<p>Facultad de Ciencias de la Salud - UASD.</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-6 mt-4">
+			<div class="member d-flex align-items-start">
+			  <div class="pic"><img src="img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+			  <div class="member-info">
+				<h4>Quintero, José Miguel</h4>
+				<span>VENEZUELA</span>
+				<p> Unidad de Genética Médica, Universidad del Zulia.</p>
+				<div class="social">
+				  <a href=""><i class="fab fa-linkedin"></i></a>
+				  <a href=""><i class="fas fa-user"></i></a>
+				  
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		<div class="col-lg-6 mt-4">
+		  <div class="member d-flex align-items-start">
+			<div class="pic"><img src="img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+			<div class="member-info">
+			  <h4>De La Luz Martínez, Ixchel</h4>
+			  <span>México</span>
+			  <p>Laboratorios IdentidADN</p>
+			  <div class="social">
+				<a href=""><i class="fab fa-linkedin"></i></a>
+				<a href=""><i class="fas fa-user"></i></a>
+				
+				
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+	  </div>
+
+
+	  
+	</div>
+
+	
+  </section><!-- End Doctors Section -->
+
+
+
+
+  <img src="img/00003-standard-scale-4_00x-gigapixel.jpg" width="100%" class="mt-1" alt="">
+
+
+

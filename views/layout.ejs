@@ -12,16 +12,30 @@
     <link rel="icon" href='/img/logo.png' type="image/x-icon" />
     <link rel="stylesheet"href="../css/style.css">
    
-    <title>YCO DIGITAL</title>
+    <title>SLAGF</title>
   </head>
   <body>
+   <div class="flex-container">
     <a href="/">
-    <div class="logo">
-      <img src="/img/logo.png"  alt="Yacht Club Olivos"> 
-    </a>
-  </div>
-    <div class="container"><%- body %></div>
+      <div class="logo">
+        <img src="/img/logo1.png" width="150px" style="margin: 10px;" alt=""> 
+      </a>
+    </div>
+  <ul class="navigation">
+    <li><a href="/dashboard">Home</a></li>
+    <li><a href="/cursos">Cursos</a></li>
+    <li><a href="/credencial">Credencial</a></li>
+    <!--<li><a href="/administrar">administrar</a></li>-->
+    <li><a href="/contacto">Contacto</a></li>
+    <li><a href="/noticias">Noticias</a></li>
+  </ul>
+</div>
 
+    <div><%- body %></div>
+
+    <div id="footer" align="center" class="mt-2">
+      <a href="#" target="_blank" id="foot">Diseñado por<strong> Sistemas Américo &copy;</strong></a>
+  </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -32,11 +46,9 @@
       integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/purecounter/purecounter.js"></script>
+    <script src="js/payment.js"></script>
     
   
   </body>

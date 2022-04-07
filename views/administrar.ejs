@@ -1,16 +1,17 @@
-<h1 class="ycotitle m-4">YCO Digital</h1>
 
-<p class="ycotitle lead title">Administrar</p>
+<p class="h1 text-center m-5">Administrar</p>
 <% include ./partials/messages %>
 <div class="container text-center">
 <% users.forEach(function (user) { %>
     <div class="card m-2">
     <div class="form-group">
         <div class="form-header mt-2">
-            <h3 class=""><%= 'Socio N°: ' +user.number %></h1>
+            <h3 class=""><%= 'ID N°: ' +user.id %></h1>
                 <div class="card-body">
                           <!--  <h3 class=""><%= 'ID: ' + user.id %></h1>-->
-                            <h3 class="blue text-white"><%= 'Nombre: ' +user.name %></h3>
+                            <h3 class="btn-outline-info"><%= 'Nombre: ' +user.name %></h3>
+                            <h3 class=""><%= 'Número: ' +user.number %></h3>
+                            <h3 class=""><%= 'País: ' +user.country %></h3>
                             <h3 class=""><%= 'Rol: ' +user.rol %></h3>
                             <h3 class=""><%= 'Email: ' +user.email %></h1>
                             
@@ -18,7 +19,7 @@
                             <a href="/administrar/editar/<%=user.id%>" class=""> <i class="fas fa-edit"></i>Editar</a>
                             <form action="/delete/<%=user.id%>?_method=DELETE" method="POST">
                                 <input type="hidden" name="_method" value="DELETE">
-                                <button class="btn btn-danger" type="submit"><i class="fas fa-user-minus"></i>
+                                <button class="btn btn-outline-danger" type="submit"><i class="fas fa-user-minus"></i>
 
                                     Borrar</button>
                             </form>
